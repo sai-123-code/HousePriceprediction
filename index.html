@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+    <h1 style="text-align:center"> House Prediction</h1>
+        <p style="text-align:center">Kindly input the values for required variables and click on Predict</p>
+
+            <form action="/predict" method="post" style="color:blue;text-align:center">
+
+                <input type= 'number' name="crime" id='crime' placeholder="CRIM :per capita crime rate by town" step="any" required>
+                <input type= 'number' name="zn" id= 'zn' placeholder="ZN : Proportion of residential land zoned for lots over 25,000 sq.ft." step="any" required>
+                <input type= 'number' name="indus" id= 'indus' placeholder="INDUS : Proportion of non-retail business acres per town" step="any" required>
+                <input type= 'number' name="chas" id= 'chas' placeholder="CHAS : Charles River dummy variable (= 1 if tract bounds river; 0 otherwise)" step="any" required>
+                <input type= 'number' name="nox" id= 'nox' placeholder="NOX : nitric oxides concentration (parts per 10 million)" step="any" required>
+                <input type= 'number' name="rm" id= 'rm' placeholder="RM : average number of rooms per dwelling" step="any" required>
+                <input type= 'number' name="age" id= 'age' placeholder="AGE : proportion of owner-occupied units built prior to 1940" step="any" required>
+                <input type= 'number' name="dis" id= 'dis' placeholder="DIS : weighted distances to five Boston employment centres " step="any" required>
+                <input type= 'number' name="rad" id= 'rad' placeholder="RAD : index of accessibility to radial highways" step="any" required>
+                <input type= 'number' name="pt-ratio" id= 'pt-ratio' placeholder="PTRATIO : pupil-teacher ratio by town" step="any" required>
+                <input type= 'number' name="b" id= 'b' placeholder="B:1000(Bk - 0.63)^2 where Bk is the proportion of blacks by town" step="any" required>
+                <input type= 'number' name="ls" id= 'ls' placeholder="LSTAT : % lower status of the population" step="any" required>
+                <input type= 'Submit' value= 'Predict' >
+            </form>
+
+</body>
+</html>
